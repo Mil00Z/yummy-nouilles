@@ -1,0 +1,122 @@
+:root{
+    /* colors */
+--red-highlight:#D2483D;
+--light-grey: #F3F3F3;
+--black: #000000;
+--white: #FFFFFF;
+--debeug:crimson;
+
+--main-font:'Montserrat';
+--second-font:'Bebas Neue';
+
+/* elements */
+--body-font:var(--main-font);
+--body-font-size:1.25rem;
+--body-font-weight:400;
+--body-line-height:1.5rem;
+
+--body-highlight-font: var(--main-font);
+--body-highlight-font-size:1.25rem;
+--body-highlight-font-weight:600;
+--body-highlight-line-height: 1.5rem;
+
+--header-font:var(--second-font);
+--header-font-size:4.5rem;
+--header-line-height:5.4rem;
+--header-font-weight:400;
+
+--title-font:var(--second-font);
+--title-font-size:1.5rem;
+--title-line-height:1.75rem;
+--title-font-weight:400;
+
+--regTransition:.25s ease-in-out;
+}
+
+/* GENERALS */
+body {
+    font-family: var(--body-font);
+    font-size:var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    line-height:var(--body-line-height);
+    background:var(--light-grey);
+    color:var(--black);
+}
+
+body.index{
+    --template:'index';
+}
+body.contact {
+    --template:'contact';
+}
+body.menu {
+    --template:'menu';
+}
+
+a {
+    color:var(--red-highlight);
+    font-size:1.5rem;
+}
+
+.debeug {
+    outline:3px dashed var(--debeug);
+}
+
+.main-title {
+    font-family:var(--header-font);
+    font-size:var(--header-font-size);
+    font-weight: var(--header-font-weight);
+    line-height: var(--header-line-height);
+    color:var(--black);
+}
+
+
+.second-title,
+h2 {
+    width:fit-content;
+    font-family:var(--title-font);
+    font-size:var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    line-height: var(--title-line-height);
+    color:var(--black);
+    text-decoration:var(--red-highlight);
+    position:relative;
+}
+
+.second-title:hover::after,
+h2:hover::after{
+    background:var(--black);
+    width:0;
+    left:50%;
+    /* Subtitles styles */
+}
+
+.second-title::after,
+h2::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    width:100%;
+    height:3px;
+    background:var(--red-highlight);
+    transition:var(--regTransition)
+}
+
+.store-title,
+.componant-minor-title,
+h3 {
+
+    font-family: var(--body-highlight-font);
+    font-size: var(--body-highlight-font-size);
+    font-weight: var(--body-highlight-font-weight);
+    color: var(--black);
+}
+
+#nav-bar,
+row-hero,
+shop-card,
+social-gallery {
+    display:block;
+    /* testing */
+}
