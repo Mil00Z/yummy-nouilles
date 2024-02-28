@@ -1,5 +1,5 @@
 :root{
-    /* colors */
+/* colors */
 --red-highlight:#D2483D;
 --light-grey: #F3F3F3;
 --black: #000000;
@@ -30,7 +30,9 @@
 --title-line-height:1.75rem;
 --title-font-weight:400;
 
+/* custom Benem's settings */
 --regTransition:.25s ease-in-out;
+
 }
 
 /* GENERALS */
@@ -62,6 +64,55 @@ a {
     outline:3px dashed var(--debeug);
 }
 
+/* Module nav-bar App */
+#nav-bar {
+    --logoSizes:72px;
+    --gap:2rem;
+    display:flex;
+    align-items: center;
+    column-gap:var(--gap);
+}
+
+.nav-bar_logo {
+    width:var(--logoSizes);
+    height:var(--logoSizes);
+}
+
+.navbar_nav {
+
+}
+
+.nav-bar_link{
+    padding-inline: 1rem;;
+    font-family: var(--title-font);
+    font-size:var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    line-height:var(--title-line-height);
+    color:var(--black);
+    text-decoration: underline transparent;
+    text-underline-offset:.3rem;
+    text-decoration-thickness: 4px;
+    transition:var(--regTransition);
+}
+
+.nav-bar_link:hover,
+.nav-bar_link.active {
+    text-decoration-color: var(--red-highlight);
+    /* Testing effect of sous props of text */
+    /* color:var(--red-highlight);
+    
+    text-underline-offset: -0.25rem; */
+}
+
+
+row-hero,
+shop-card,
+social-gallery {
+    display:block;
+    /* testing */
+}
+
+/* Module Main Title */
 .main-title {
     font-family:var(--header-font);
     font-size:var(--header-font-size);
@@ -70,7 +121,7 @@ a {
     color:var(--black);
 }
 
-
+/*Module Secondary Title*/
 .second-title,
 h2 {
     width:fit-content;
@@ -113,10 +164,5 @@ h3 {
     color: var(--black);
 }
 
-#nav-bar,
-row-hero,
-shop-card,
-social-gallery {
-    display:block;
-    /* testing */
-}
+
+
