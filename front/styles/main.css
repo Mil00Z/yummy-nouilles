@@ -105,6 +105,59 @@ a {
 }
 
 
+/* Module Hero */
+#hero {
+    --gap:90px;
+    display:flex;
+    justify-content: center;
+    column-gap: var(--gap);
+    margin-block:clamp(50px,10vh,100px);
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_content .main-title {
+    margin: 0;
+}
+
+.hero_content strong {
+    color:var(--red-highlight);
+    font-family: var(--body-highlight-font);
+    font-size:var(--body-highlight-font-size);
+    font-weight: var(--body-highlight-font-weight);
+}
+
+.hero_content p {
+    color:var(--black);
+    font-family: var(--body-highlight-font);
+    font-size:var(--body-highlight-font-size);
+    font-weight: var(--body-highlight-font-weight);
+}
+
+.hero_content a {
+    width: fit-content;
+    padding:1rem 2rem;
+    text-align: center;
+    color:var(--white);
+    font-family: var(--title-font);
+    font-size:var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    background: var(--black);
+    outline:2px solid transparent;
+    text-decoration: none;
+    transform: var(--regTransition);
+}
+
+.hero_content a:hover {
+    color:var(--black);
+    outline-color:var(--black);
+    background: var(--white);
+}
+
+
 row-hero,
 shop-card,
 social-gallery {
