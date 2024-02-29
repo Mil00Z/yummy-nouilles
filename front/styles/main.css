@@ -367,7 +367,7 @@ social-gallery {
 #footer_social{
     display: flex;
     justify-content: flex-end;
-    height:10vh;
+    /* height:10vh; */
     padding:clamp(40px,4vh,80px);
     background:var(--black);
 }
