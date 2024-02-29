@@ -183,7 +183,6 @@ social-gallery {
     color:var(--black);
 }
 
-
 /*Module: Secondary Title*/
 .second-title {
     width:fit-content;
@@ -394,6 +393,10 @@ social-gallery {
     font-family: var(--body-font);
     font-size:1rem;
     font-weight: var(--body-font-weight);
+}
+
+#contact .main-title {
+    text-align: center;
 }
 
 
