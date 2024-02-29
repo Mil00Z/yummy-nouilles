@@ -68,6 +68,7 @@ a {
 }
 .wrapper{
     width:75%;
+    margin: 0 auto;
 }
 
 
@@ -123,7 +124,7 @@ a {
     flex-direction: column;
 }
 
-.hero_content .main-title {
+#hero .main-title {
     margin: 0;
 }
 
@@ -249,6 +250,7 @@ social-gallery {
     justify-content: center;
     align-items: center;
     padding-block: clamp(16px,5vh,65px);
+    margin-top:2rem;
     background:var(--red-highlight);
 }
 
@@ -335,6 +337,67 @@ social-gallery {
 }
 
 
+#menu-shop .main-title {
+    margin-block: 3rem 0;
+}
+
+#menu-shop .second-title {
+    margin-bottom:2.5rem;
+}
+
+.menu_baseline {
+    margin-block: .75rem 2rem;
+}
+
+.menu_commons {
+    color:var(--red-highlight);
+}
+
+.menu_data {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:var(--white);
+    padding-block:4rem;
+}
+
+.menu_logo{
+    --square:130px;
+    width:var(--square);
+    height:var(--square);
+}
+
+/* Module : Menu Part */
+.menu_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 1.5rem;
+}
+
+.menu_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: .9rem;
+    font-family: var(--body-highlight-font);
+    font-size:1rem;
+    font-weight: var(--body-highlight-font-weight);
+    line-height:1;
+}
+
+.menu_item-desc {
+    margin-block:.75rem;
+    font-family: var(--body-font);
+    font-size:1rem;
+    font-weight: var(--body-font-weight);
+}
+
+
+
 /* Module: Footer Contact */
 #footer_contact{
     display: flex;
@@ -367,7 +430,7 @@ social-gallery {
 #footer_social{
     display: flex;
     justify-content: flex-end;
-    height:10vh;
+    /* height:10vh; */
     padding:clamp(40px,4vh,80px);
     background:var(--black);
 }
