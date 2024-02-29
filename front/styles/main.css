@@ -211,7 +211,7 @@ social-gallery {
 }
 
 
-.store-title,
+.shop_title,
 .componant-minor-title {
     font-family: var(--body-highlight-font);
     font-size: var(--body-highlight-font-size);
@@ -251,7 +251,7 @@ social-gallery {
 
 
 #gallery {
-    --gap:20px;
+    --gap:70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -300,6 +300,28 @@ social-gallery {
     --op:.76;
     color:var(--red-highlight);
     /* visibility: visible; */
+}
+
+
+#poi {
+    --gap:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom:72px;   
+}
+
+.shop_card {
+  
+}
+
+.shop_title {
+    margin-block:0;
+}
+
+.shop_data {
+    margin-block:.25rem;
 }
 
 
