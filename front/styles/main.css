@@ -35,6 +35,8 @@
 
 }
 
+
+
 /* GENERALS */
 body {
     font-family: var(--body-font);
@@ -56,15 +58,18 @@ body.menu {
 }
 
 a {
-    color:var(--red-highlight);
-    font-size:1.5rem;
+    /* color:var(--red-highlight);
+    font-size:1.5rem; */
+    text-decoration: unset;
 }
 
 .debeug {
     outline:3px dashed var(--debeug);
 }
 
-/* Module nav-bar App */
+
+
+/* Module: Nav-bar App */
 #nav-bar {
     --logoSizes:72px;
     --gap:2rem;
@@ -100,12 +105,12 @@ a {
     text-decoration-color: var(--red-highlight);
     /* Testing effect of sous props of text */
     /* color:var(--red-highlight);
-    
     text-underline-offset: -0.25rem; */
 }
 
 
-/* Module Hero */
+
+/* Module: Hero */
 #hero {
     --gap:90px;
     display:flex;
@@ -165,7 +170,9 @@ social-gallery {
     /* testing */
 }
 
-/* Module Main Title */
+
+
+/* Module: Main Title */
 .main-title {
     font-family:var(--header-font);
     font-size:var(--header-font-size);
@@ -174,7 +181,8 @@ social-gallery {
     color:var(--black);
 }
 
-/*Module Secondary Title*/
+
+/*Module: Secondary Title*/
 .second-title,
 h2 {
     width:fit-content;
@@ -215,6 +223,53 @@ h3 {
     font-size: var(--body-highlight-font-size);
     font-weight: var(--body-highlight-font-weight);
     color: var(--black);
+}
+
+
+
+/* Module: Footer Contact */
+#footer_contact{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-block:clamp(50px,8vh,73px);
+}
+
+.contact_content {
+    margin-block:.15rem;
+    font-family: var(--body-font);
+    font-size:var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    line-height: var(--body-line-height);
+    text-align: center;
+    color:var(--body-color);
+}
+
+.contact_data {
+    font-family: var(--body-highlight-font);
+    font-size:var(--body-highlight-font-size);
+    font-weight: var(--body-highlight-font-weight);
+    line-height: var(--body-highlight-line-height);
+    color:var(--black);
+}
+
+
+/* Module: Footer Social */
+#footer_social{
+    display: flex;
+    justify-content: flex-end;
+    height:10vh;
+    padding:clamp(40px,4vh,80px);
+    background:var(--black);
+}
+
+.social-nav {
+    --gap:56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap:var(--gap);
 }
 
 
