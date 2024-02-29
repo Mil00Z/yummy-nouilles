@@ -31,7 +31,7 @@
 --title-font-weight:400;
 
 /* custom Benem's settings */
---regTransition:.25s ease-in-out;
+--regTransition:.33s ease-in-out;
 
 }
 
@@ -290,14 +290,16 @@ social-gallery {
     background: linear-gradient(to left,rgba(255,255,255,var(--op)) 0%, rgba(255,255,255,var(--op)) 100%);
     font-family: var(--body-highlight-font);
     font-size:var(--body-highlight-font-size);
-    color:var(--red-highlight);
-    visibility: hidden;
+    font-weight: var(--body-highlight-font-weight);
+    color:transparent;
+    /* visibility: hidden; */
     transition: var(--regTransition);
 }
 
 .gallery_card:hover .title_card {
-    --op:.66;
-    visibility: visible;
+    --op:.76;
+    color:var(--red-highlight);
+    /* visibility: visible; */
 }
 
 
