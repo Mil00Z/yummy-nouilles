@@ -16,78 +16,92 @@
 
     <header>
 
-        <nav-bar id="nav-bar" class="debeug">
-            <img src="assets/img/yummy-logo.svg" alt="Logo du site Yummy Nouilles">
-            <nav>
-                <a href="#">Accueil</a>
-                <a href="#">Menu</a>
-                <a href="#">Contact</a>
+        <nav-bar id="nav-bar" class="">
+            <img src="assets/img/yummy-logo.svg" alt="Logo du site Yummy Nouilles" class="nav-bar_logo">
+            <nav class="nav-bar_nav" role="navigation" aria-label="Menu principal">
+                <a href="#" class="nav-bar_link active">Accueil</a>
+                <a href="#" class="nav-bar_link">Menu</a>
+                <a href="#" class="nav-bar_link">Contact</a>
             </nav>
         </nav-bar>
 
-        <section class="debeug">
-            <row-hero>
-                <h1 class="main-title">Yummy nouilles</h1>
-                <p>les nouilles les plus <strong>yummy</strong> de tout Brest</p>
-                <a href="#">Click & collect</a>
-            </row-hero>
-            <img src="assets/img/yummy-logo.svg" alt="Logo Yummy Nouilles">
+        <section id="hero">
+                <row-hero class="hero_content">
+                    <h1 class="main-title">Yummy nouilles</h1>
+                    <p>Les nouilles les plus<strong> yummy </strong>de tout Brest</p>
+                    <a href="#" class="cta_button">Click & collect</a>
+                </row-hero>
+                <img src="assets/img/yummy-logo.svg" alt="Logo Yummy Nouilles">
         </section>
 
     </header>
 
     <main>
-        <section id="poi" class="debeug">
+        <section id="poi" class="">
+
             <h2 class="second-title">Nos adresses</h2>
-            <shop-card>
-                <img src="assets/img/shop/yummy-shop-1.jpg" alt="">
-                <h3 class="store-title">Yummy Shop 1</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </shop-card>
-            <shop-card>
-                <img src="assets/img/shop/yummy-shop-2.jpg" alt="">
-                <h3 class="store-title">Yummy Shop 2</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </shop-card>
-            <shop-card>
-                <img src="assets/img/shop/yummy-shop-3.jpg" alt="">
-                <h3 class="store-title">Yummy Shop 3</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </shop-card>
+
+            <shop-gallery class="gallery_grid wrapper">
+                <shop-card class="shop_card">
+                    <img src="assets/img/shop/yummy-shop-1.jpg" alt="">
+                    <h3 class="shop_title">Yummy Shop 1</h3>
+                    <p class="shop_data">185 rue de Lancry.
+                    <br>
+                    29200 Brest</p>
+                </shop-card>
+                <shop-card class="shop_card">
+                    <img src="assets/img/shop/yummy-shop-2.jpg" alt="">
+                    <h3 class="shop_title">Yummy Shop 2</h3>
+                    <p class="shop_data">350 rue Saint-Guillaume.
+                        <br>
+                    29200 Brest</p>
+                </shop-card>
+                <shop-card class="shop_card">
+                    <img src="assets/img/shop/yummy-shop-3.jpg" alt="">
+                    <h3 class="shop_title">Yummy Shop 3</h3>
+                    <p class="shop_data">208 rue au Maire.
+                    <br>
+                    29200 Brest</p>
+                </shop-card>
+            </shop-gallery>
+
         </section>
 
-        <section id="cta" class="banner debeug">
+        <section id="cta" class="banner">
                 
-            <h2 class="second-title">Commandez-maintenant !</h2>
-            <a href="#">Click & Collect</a>
+            <h2 class="banner-title">Commandez-maintenant !</h2>
+            <a href="#" class="cta_button">Click & Collect</a>
 
         </section>
 
-        <section id="infos" class="debeug"> 
-            <h2 class="second-title">Notre savoir-faire</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, excepturi incidunt fugiat alias magnam molestias? Expedita incidunt optio ex fuga? Eius necessitatibus excepturi quisquam sequi.</p>
+        <section id="infos" class=""> 
+        
+                <h2 class="second-title">Notre savoir-faire</h2>
+                <div class="wrapper">
+                <p>Depuis près de 10 ans maintenant, nous partageons avec vous les meilleures recettes. Nos plats ont tous été conçus, et affinés au fil des années et des goûts. Nous vous apportons le meilleur de l’Asie de l’Est en plein coeur de Paris. Chaque année, nous reprenons tous nos plats pour les améliorer, les modifier et qu’ils vous plaisent toujours plus. Nous espérons que vous vous régalerez en dégustant nos plats.</p>
+            </div>
         </section>
 
-        <section id="gallery" class="debeug">
+        <section id="gallery" class="">
             <h2 class="second-title">Retrouvez-nous sur les réseaux sociaux</h2>
-            <social-gallery>
-                <social-card><img src="assets/img/social/yummy-gallery-1.jpg" alt="">
-                    <span class="title-item">title item</span>
+            <social-gallery class="gallery_grid wrapper">
+                <social-card class="gallery_card"><img src="assets/img/social/yummy-gallery-1.jpg" alt="">
+                    <span class="title_card">title item</span>
                 </social-card>
-                <social-card><img src="assets/img/social/yummy-gallery-2.jpg" alt="">
-                    <span class="title-item">title item</span>
+                <social-card class="gallery_card"><img src="assets/img/social/yummy-gallery-2.jpg" alt="">
+                    <span class="title_card">title item</span>
                 </social-card>
-                <social-card><img src="assets/img/social/yummy-gallery-3.jpg" alt="">
-                    <span class="title-item">title item</span>
+                <social-card class="gallery_card"><img src="assets/img/social/yummy-gallery-3.jpg" alt="">
+                    <span class="title_card">title item</span>
                 </social-card>
-                <social-card><img src="assets/img/social/yummy-gallery-4.jpg" alt="">
-                    <span class="title-item">title item</span>
+                <social-card class="gallery_card"><img src="assets/img/social/yummy-gallery-4.jpg" alt="">
+                    <span class="title_card">title item</span>
                 </social-card>
-                <social-card><img src="assets/img/social/yummy-gallery-5.jpg" alt="">
-                    <span class="title-item">title item</span>
+                <social-card class="gallery_card"><img src="assets/img/social/yummy-gallery-5.jpg" alt="">
+                    <span class="title_card">title item</span>
                 </social-card>
-                <social-card><img src="assets/img/social/yummy-gallery-6.jpg" alt="">
-                    <span class="title-item">title item</span>
+                <social-card class="gallery_card"><img src="assets/img/social/yummy-gallery-6.jpg" alt="">
+                    <span class="title_card">title item</span>
                 </social-card>  
             </social-gallery>
         </section>
@@ -95,18 +109,18 @@
 
 
     <footer>
-        <section id="contact" class="debeug">
+        <section id="footer_contact" class="">
             <h2 class="second-title">Contactez-nous</h2>
-            <p>Vous souhaitez nous poser une question, nous faire un feedback, ou tout simplement nous contacter ?</p>
-        <p>Écrivez-nous à <a href="mailto:yummy@noodles.fr" class="contact-data">yummy@noodles.fr</a>
-             ou appelez nous au <a href="tel:+ 01 13 86 23 42" class="contact-data"> 01 13 86 23 42</a></p>
+            <p class="contact_content">Vous souhaitez nous poser une question, nous faire un feedback, ou tout simplement nous contacter ?</p>
+        <p class="contact_content">Écrivez-nous à <a href="mailto:yummy@noodles.fr" class="contact_data">yummy@noodles.fr</a>
+             ou appelez nous au <a href="tel:+ 01 13 86 23 42" class="contact_data"> 01 13 86 23 42</a></p>
 
         </section>
 
-        <section id="social" class="debeug">
+        <section id="footer_social" class="">
             <nav class="social-nav">
-                <a href="#" class="facebook"><img src="assets/icons/facebook-picto.svg" alt=""></a>
                 <a href="#" class="insta"><img src="assets/icons/instagram-picto.svg" alt=""></a>
+                <a href="#" class="facebook"><img src="assets/icons/facebook-picto.svg" alt=""></a>
                 <a href="" class="map"><img src="assets/icons/map-flag-picto.svg" alt=""></a>
             </nav>
         </section>
