@@ -83,10 +83,6 @@ a {
     height:var(--logoSizes);
 }
 
-.navbar_nav {
-
-}
-
 .nav-bar_link{
     padding-inline: 1rem;;
     font-family: var(--title-font);
@@ -164,6 +160,7 @@ a {
     background: var(--white);
 }
 
+
 row-hero,
 shop-card,
 social-gallery {
@@ -194,7 +191,6 @@ social-gallery {
     text-decoration:var(--red-highlight);
     position:relative;
 }
-
 
 .second-title:hover::after {
     background:var(--black);
@@ -234,6 +230,13 @@ social-gallery {
 }
 
 
+#infos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Module: CTA banner */
 #cta {
@@ -246,6 +249,56 @@ social-gallery {
     background:var(--red-highlight);
 }
 
+
+#gallery {
+    --gap:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Module : Gallery Grid */
+.gallery_grid {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:1rem;
+}
+
+.gallery_card {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: var(--regTransition);
+}
+
+.title_card {
+    --op:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to left,rgba(255,255,255,var(--op)) 0%, rgba(255,255,255,var(--op)) 100%);
+    font-family: var(--body-highlight-font);
+    font-size:var(--body-highlight-font-size);
+    color:var(--red-highlight);
+    visibility: hidden;
+    transition: var(--regTransition);
+}
+
+.gallery_card:hover .title_card {
+    --op:.66;
+    visibility: visible;
+}
 
 
 /* Module: Footer Contact */
