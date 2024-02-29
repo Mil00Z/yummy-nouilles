@@ -142,9 +142,11 @@ a {
     font-weight: var(--body-highlight-font-weight);
 }
 
-.hero_content a {
+
+/* Module : CTA Button  */
+.cta_button {
     width: fit-content;
-    padding:1rem 2rem;
+    padding:1rem 2.5rem;
     text-align: center;
     color:var(--white);
     font-family: var(--title-font);
@@ -156,12 +158,11 @@ a {
     transform: var(--regTransition);
 }
 
-.hero_content a:hover {
+.cta_button:hover {
     color:var(--black);
     outline-color:var(--black);
     background: var(--white);
 }
-
 
 row-hero,
 shop-card,
@@ -183,8 +184,7 @@ social-gallery {
 
 
 /*Module: Secondary Title*/
-.second-title,
-h2 {
+.second-title {
     width:fit-content;
     font-family:var(--title-font);
     font-size:var(--title-font-size);
@@ -195,16 +195,15 @@ h2 {
     position:relative;
 }
 
-.second-title:hover::after,
-h2:hover::after{
+
+.second-title:hover::after {
     background:var(--black);
     width:0;
     left:50%;
     /* Subtitles styles */
 }
 
-.second-title::after,
-h2::after{
+.second-title::after {
     content:'';
     position:absolute;
     left:0;
@@ -215,14 +214,36 @@ h2::after{
     transition:var(--regTransition)
 }
 
-.store-title,
-.componant-minor-title,
-h3 {
 
+.store-title,
+.componant-minor-title {
     font-family: var(--body-highlight-font);
     font-size: var(--body-highlight-font-size);
     font-weight: var(--body-highlight-font-weight);
     color: var(--black);
+}
+
+
+
+/* Module: Banner Title */
+.banner-title{
+    font-family: var(--body-highlight-font);
+    font-size: var(--body-highlight-font-size);
+    font-weight: var(--body-highlight-font-weight);
+    color: var(--white);
+}
+
+
+
+/* Module: CTA banner */
+#cta {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:210px;
+    padding-block: clamp(16px,3vh,65px);
+    background:var(--red-highlight);
 }
 
 
