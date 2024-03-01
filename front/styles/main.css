@@ -31,6 +31,9 @@
 --title-font-weight:400;
 
 /* custom Benem's settings */
+--mobile:768px;
+--tablet:1024px;
+--xl:1440px;
 --regTransition:.33s ease-in-out;
 
 }
@@ -439,7 +442,7 @@ social-gallery {
     font-weight: var(--body-font-weight);
     line-height: var(--body-line-height);
     text-align: center;
-    color:var(--body-color);
+    color:var(--black);
 }
 
 .contact_data {
@@ -468,5 +471,85 @@ social-gallery {
     column-gap:var(--gap);
 }
 
+/* MEDIA QUERIES */
+@media all and (max-width:768px) {
 
+    :root {
+        --screen-target-querie:var(--mobile);
+
+        /* --body-font-size:1rem; */
+        --body-font-size:1.1rem;
+        --body-line-height:1.2rem;
+        --body-highlight-font-size: 1rem;
+        --body-highlight-line-height: 1.2rem;
+        --header-font-size:2.5rem;
+        --header-line-height:3rem;
+        --title-font-size:1.25rem;
+        --title-font-size:1.3rem;
+        --title-line-height:1.5rem;
+    }
+
+    /* Module: Nav Bar */
+    #nav-bar {
+        --gap:1rem;
+        justify-content: center;
+        padding-top: 1.25rem;
+    }
+
+    .nav-bar_link {
+        padding-inline: .7rem;
+    }
+    
+    /* Module: Hero */
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        margin-block: 5vh;
+    }
+
+    .nav-bar_logo {
+        --logoSizes:3rem;
+    }
+
+    .hero_content {
+        align-items: center;
+    }
+
+    #hero > img {
+        --imgSizes:232px;
+        width: var(--imgSizes);
+        height:var(--imgSizes);
+        margin-block:2rem;
+    }
+
+    .cta_button {
+        width: 215px
+        /* width:100%; */
+    }
+
+    .gallery_grid {
+        --gap:2rem;
+    }
+
+    #infos .second-title {
+        margin-bottom:.5rem;
+    }
+
+    #infos p {
+        text-align: center;;
+    }
+
+    .gallery_card{
+        width:auto;
+    }
+
+    #footer_contact {
+        padding-inline:2rem;
+    }
+
+    #footer_social{
+        justify-content: center;
+    }
+
+}
 
