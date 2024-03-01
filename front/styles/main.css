@@ -38,7 +38,16 @@
 
 
 /* GENERALS */
+
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+  }
+
 body {
+    margin: 0;
+    padding:0;
     font-family: var(--body-font);
     font-size:var(--body-font-size);
     font-weight: var(--body-font-weight);
@@ -80,6 +89,7 @@ a {
     display:flex;
     align-items: center;
     column-gap:var(--gap);
+    padding:1rem;
 }
 
 .nav-bar_logo {
@@ -182,7 +192,6 @@ social-gallery {
     line-height: var(--header-line-height);
     color:var(--black);
 }
-
 
 /*Module: Secondary Title*/
 .second-title {
@@ -319,9 +328,6 @@ social-gallery {
     margin-bottom:72px;   
 }
 
-.shop_card {
-  
-}
 
 .shop_title {
     margin-block:0;
@@ -395,6 +401,25 @@ social-gallery {
     font-size:1rem;
     font-weight: var(--body-font-weight);
 }
+
+
+#contact .main-title {
+    text-align: center;
+}
+
+#contact .shop_title {
+    font-size:1.5rem;
+}
+
+#contact .shop_data {
+    font-size:var(--title-font-size);
+    line-height: 1;
+}
+
+#contact .gallery_grid {
+    --gap:3rem
+}
+
 
 
 
