@@ -545,11 +545,40 @@ social-gallery {
 
     #footer_contact {
         padding-inline:2rem;
+        margin-block:5vh;
     }
 
     #footer_social{
         justify-content: center;
     }
 
+    #menu-shop .main-title {
+        margin-block:1rem;
+        text-align: center;
+    }
+
+    #menu-shop .second-title {
+        margin-bottom:1rem;
+    }
+
+    .menu_part {
+        margin-block:1rem;
+        }
+
+    .menu_part .menu_item-desc {
+        display:none;
+    }
+
+    #menu-shop .menu_baseline {
+        display:none;
+    }
+
+    .menu_part:last-of-type {
+        margin-bottom:0;
+    }
+
+    .menu_data {
+        padding-block:2rem;
+    }
 }
 
