@@ -277,6 +277,7 @@ social-gallery {
 
 /* Module : Gallery Grid */
 .gallery_grid {
+
     display: flex;
     flex-flow: row wrap;
     gap: var(--gap);
@@ -323,17 +324,17 @@ social-gallery {
 
 
 #poi {
-    /* --gap:25px; */
+    --gap:2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom:72px;   
+    margin-bottom:4rem;   
 }
 
 
 .shop_title {
-    margin-block:0;
+    margin-block:.25rem;
 }
 
 .shop_data {
@@ -410,8 +411,15 @@ social-gallery {
     text-align: center;
 }
 
+
+   
+#gallery .shop_card .shop_data {
+    font-size:var(--body-font-size);
+    line-height: 1;
+}
+
 #contact .shop_title {
-    font-size:1.5rem;
+    font-size: var(--title-font-size);
 }
 
 #contact .shop_data {
@@ -552,11 +560,14 @@ social-gallery {
         justify-content: center;
     }
 
+   
+
+    /* Menus in Menu  */
+
     #menu-shop .main-title {
         margin-block:1rem;
         text-align: center;
     }
-
     #menu-shop .second-title {
         margin-bottom:1rem;
     }
@@ -580,5 +591,21 @@ social-gallery {
     .menu_data {
         padding-block:2rem;
     }
+
+    .gallery_grid {justify-content: center;}
+
+    /* Shop Card in Contact */
+        #contact .shop_title {
+        font-size:1.25rem;
+        text-align: center;
+    }
+
+        #contact .shop_data {
+        font-family: var(--body-font);
+        font-size: var(--body-font-size);
+        text-align: center;
+    }
+
+
 }
 
